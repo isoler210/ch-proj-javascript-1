@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200&family=Fredoka+One&family=Mada:wght@200;300&display=swap');
+/* font-family: 'Blinker', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Mada', sans-serif; */
+
+body{
+    background: url("https://i.ibb.co/2Wb2cr8/Dise-o-sin-t-tulo-1.png") ;
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+
+.hero {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    
+}
+.hero .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 12em;
+    color: rgb(58, 53, 195);
+    text-shadow: -3em 3em 3em rgb(101, 193, 210);
+    font-family: 'Fredoka One';
+    margin: 2em;
+}
+.hero h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    color: black;
+    font-size: 4em;
+    font-family: 'Blinker', sans-serif;
+}
