@@ -21,7 +21,22 @@ body{
     background-attachment: scroll;
 }
 
+.gid-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr ; 
+    gap: 1px 1px; 
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer"; 
+}
 
+.header{
+    grid-area: header;
+    display: flex;
+    
+}
 
 .hero {
     
