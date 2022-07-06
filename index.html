@@ -15,55 +15,63 @@
 
 <body>
     <div class="container">
-        <header class="header row">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="iconos/logo-proyecto-tienda.nb.png" alt="logo de la tienda" width="30" height="24">
+        <header>
+            
+            <a href="#" class="logo m-3">
+                    <img src="iconos/logo-proyecto-tienda.nb.png" alt="logo de la tienda" width="100" height="100">
                 </a>
     </div>
-    <div class="menu justify-content-center">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#">dishes</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">review</a>
+        <a href="#">order</a>
     </nav>
-
-    <div class="hero">
-            <h1>Hola!</h1>
-            <h2>Entrega del desafio</h2>
+    
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
         
     </div>
+
     </header>
     <main>
+        <div class="hero">
+            <h1>Hola!</h1>
+            <h2>Entrega del desafio</h2>
+        </div>
         <section>
             <div>
                     <img src="iconos/package.png" alt="puntos pickup">
                     <h2>PUNTOS PICK UP</h2>
                     <p>conoce nuestras tiendas fisicas</p>
-                </div>
-            <div>
-                
-            </div>
-            <div>
-                
-            </div>
-            <div>
-                
             </div>
 
         </section>
-
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                </aside>
+            </div>
+        </div>
     </main>
     <footer>
 

@@ -1,20 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200&family=Fredoka+One&family=Mada:wght@200;300&display=swap');
 /* font-family: 'Blinker', sans-serif;
 font-family: 'Fredoka One', cursive;
 font-family: 'Mada', sans-serif; */
 
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #e6d7d7a6;
+    --border: .1rem solid rgba(255, 255, 255, 3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    
+}
+
 body{
-    background: url("https://i.ibb.co/2Wb2cr8/Dise-o-sin-t-tulo-1.png") ;
+    background: var(--bg);
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,31 +37,80 @@ body{
 }
 
 .gid-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr ; 
-    grid-template-rows: 1fr 1fr ; 
-    gap: 1px 1px; 
-    grid-template-areas: 
-      "header"
-      "main"
-      "footer"; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
-.header{
-    grid-area: header;
+header{
+    position: fixed;
+    top: 0; left: 0; right:0;
+    background: #fff;
+    padding: 1rem 7%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+
+header .logo img{
+    height: 6rem;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color: rgb(90, 148, 196);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
     
 }
 
-.hero {
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-    
+header .icons i:hover;
+header .icons a:hover{
+    color:#fff;
+    background: var(#b991dba6);
+    transform: rotate(360deg);
 }
-.hero .titulo {
+
+header .icons #menu-bears{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero .titulo{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,20 +122,23 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
     font-weight: bold;
     font-size: 12em;
     color: rgb(58, 53, 195);
-    text-shadow: -3em 3em 3em rgb(101, 193, 210);
+    text-shadow: -3em 3em -3em rgb(101, 193, 210);
     font-family: 'Fredoka One';
     margin: 2em;
 }
+
 .hero h2{
+    height: 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em;
+    margin: 3em;
     color: black;
     font-size: 4em;
     font-family: 'Blinker', sans-serif;
 }
+
