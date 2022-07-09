@@ -16,66 +16,201 @@
 <body>
     <div class="container">
         <header>
-            
             <a href="#" class="logo m-3">
-                    <img src="iconos/logo-proyecto-tienda.nb.png" alt="logo de la tienda" width="100" height="100">
-                </a>
-    </div>
-    <nav class="navbar">
-        <a class="active" href="#home">home</a>
-        <a href="#">dishes</a>
-        <a href="#">about</a>
-        <a href="#">menu</a>
-        <a href="#">review</a>
-        <a href="#">order</a>
-    </nav>
-    
-    <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-    </div>
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-        
-    </div>
+                <img src="iconos/logo-proyecto-tienda.nb.png" alt="logo de la tienda" width="150" height="150">
+            </a>
 
-    </header>
-    <main>
-        <div class="hero">
-            <h1>Hola!</h1>
-            <h2>Entrega del desafio</h2>
-        </div>
-        <section>
-            <div>
-                    <img src="iconos/package.png" alt="puntos pickup">
-                    <h2>PUNTOS PICK UP</h2>
-                    <p>conoce nuestras tiendas fisicas</p>
+            <nav class="navbar">
+                <a class="active" href="#home">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">review</a>
+                <a href="#">order</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
             </div>
 
-        </section>
-        <div class="container">
-            <div class="row">
-                <!-- Elementos generados a partir del JSON -->
-                <main id="items" class="col-sm-8 row"></main>
-                <!-- Carrito -->
-                <aside class="col-sm-4">
-                    <h2>Carrito</h2>
-                    <!-- Elementos del carrito -->
-                    <ul id="carrito" class="list-group"></ul>
-                    <hr>
-                    <!-- Precio total -->
-                    <p class="text-right">Total: <span id="total"></span>&euro;</p>
-                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                </aside>
-            </div>
-        </div>
-    </main>
-    <footer>
+        </header>
 
-    </footer>
+        <main>
+            <section class="home" id="home">
+                <div class="container">
+
+                    <div class="wrapper">
+
+                        <div class="slide">
+                            <div class="content">
+                                <h1>Hola!</h1>
+                                <h2>Entrega del desafio</h2>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="images/" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <h1 class="heading"> <span> About</span> us </h1>
+                <div class="row">
+                    <div>
+                        <img src="images/" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lorem ipsum dolor sit amet .</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Omnis quis tempore cumque vero saepe, in obcaecati aut eius,
+                            soluta adipisci necessitatibus sequi nesciunt accusamus non at blanditiis labore! Ipsum,
+                            quia!</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-three">
+                    <div class="row">
+                        <img src="iconos/package.png" alt="puntos pickup">
+                        <h2>PUNTOS PICK UP</h2>
+                        <p>conoce nuestras tiendas fisicas</p>
+                    </div>
+                    <div class="row">
+                        <img src="iconos/operador.png" alt="puntos pickup">
+                        <h2>SOPORTE ONLINE</h2>
+                        <p>Atencion las 24hs</p>
+                    </div>
+                    <div class="row">
+                        <img src="iconos/truck.png" alt="puntos pickup">
+                        <h2>ENVIAMOS TU COMPRA</h2>
+                        <p>Envios gratis a partir de $4.000</p>
+                    </div>
+                    <div class="row">
+                        <img src="iconos/telefono-inteligente.png" alt="puntos pickup">
+                        <h2>HACE TU ORDEN</h2>
+                        <p>Realiza tus compras desde la app</p>
+                    </div>
+                </div>
+            </section>
+            <section class="nuestrosDestacados">
+                <h3> Nuestros destacados </h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="row">
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide col-6" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.ibb.co/Z1BZM4X/pexels-designecologist-1248583.jpg" class="d-block w-100" alt="...">
+                        <h3>SALE</h3>
+                        <h4>Almohadones</h4>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/Y7Qq8M7/pexels-designecologist-1239298.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide col-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.ibb.co/gv6r5mL/pexels-cottonbro-6739696-1.jpg" class="d-block w-100" alt="...">
+                            <h3>20%</h3>
+                            <h4>DECORACION</h4>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/CBHV9W1/pexels-cottonbro-6739698-1.jpg" class="d-block w-100" alt="...">
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="products" id="products">
+
+                <h3 class="heading">OUR<span>products</span></h3>
+
+                <div class="product-slider">
+                    <div class="wrapper">
+                        <div class="box">
+                            <img src="image/" alt="">
+                            <h3></h3>
+                            <div class="price"> $ </div>
+            
+                        </div>
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-slider">
+                    <div class="wrapper">
+                        <div class="box">
+                            <img src="image/" alt="">
+                            <h3></h3>
+                            <div class="price"> $ </div>
+            
+                        </div>
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-slider">
+                    <div class="wrapper">
+                        <div class="box">
+                            <img src="image/" alt="">
+                            <h3></h3>
+                            <div class="price"> $ </div>
+            
+                        </div>
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+
+        </footer>
 </body>
 
 <script src="./js/index.js"></script>

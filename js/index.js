@@ -1,10 +1,12 @@
+//PRIMER DESAFIO
 //entrada = prompt ("Jugamos? Adivina el numero del 1 al 10 para poder entrar");
 //while (entrada != "6") {
 //    alert(" es incorrecto " + entrada);
 //    entrada = prompt("Intenta de nuevo");
 //}
 
-let nombre = prompt("Ingresar nombre");
+//SEGUNDO DESAFIO
+/*let nombre = prompt("Ingresar nombre");
 let edad = prompt("Ingresar edad");
 let email = prompt("Ingresar email");
 let phone = prompt("Ingresar telefono")
@@ -40,6 +42,13 @@ const validations = (nombre, edad, email, phone, username) =>{
         isValidPhone,
         isValidUsername
     );
-   
+}*/
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
 }
 
