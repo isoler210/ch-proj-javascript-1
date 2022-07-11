@@ -122,10 +122,7 @@ header .icons #menu-bars{
     display: none;
 }
 
-
-
 .home{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     background: url(./) no-repeat;
@@ -173,10 +170,8 @@ header .icons #menu-bars{
     font-family: 'Blinker', sans-serif;
 }
 .container{
-    width: 95%;
     margin: 0 auto;
 }
-
 
 .about .row{
     display: flex;
@@ -224,6 +219,81 @@ header .icons #menu-bars{
     align-items: center;
 }
 
+.products .products-slider{
+    padding:1rem;   
+}
+
+.products .products-slider:first-child{
+    margin-bottom: 2rem;   
+}
+
+.products .products-slider .box{
+    background: #fff;
+    border-radius:  .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.products .products-slider .box:hover{
+    outline-offset: 0rem;
+    outline:  var(--outline-hover);
+}
+
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.products .product .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.container-product{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .card{
+    width: 100%;
+    background: #fff;
+
+}
+
+.container .card .image-product{
+    position: relative;
+    width: 100%;
+    height: 310px;
+}
+
+.container .card .image-product img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.products-container{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repe;
+
+}
 
 
 /*MEDIA QUERIES*/
