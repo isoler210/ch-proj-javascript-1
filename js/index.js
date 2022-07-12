@@ -11,12 +11,12 @@ class Producto {
     }
 }
 const productos = [];
-productos.push(new Producto(productos.length, "Bolsa De Macrame", "$45"));
+productos.push(new Producto(productos.length, "Bolsa De Macrame", "$456"));
 productos.push(new Producto(productos.length, "Cubiertos Resina", "$23"));
 productos.push(new Producto(productos.length, "Cepillo De Caña", "$488"));
-productos.push(new Producto(productos.length, "Bolsa De Macrame", "$56"));
-productos.push(new Producto(productos.length, "Cubiertos Resina", "$98"));
-productos.push(new Producto(productos.length, "Cepillo De Caña", "$69"));
+productos.push(new Producto(productos.length, "SET bolsitas", "$56"));
+productos.push(new Producto(productos.length, "Cepillo Exfoliador", "$98"));
+productos.push(new Producto(productos.length, "Esponja Natural", "$69"));
 
 let carrito = [];
 
