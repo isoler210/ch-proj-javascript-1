@@ -38,7 +38,7 @@ body{
     background-attachment: scroll;
 }
 section{
-    padding: 1rem 7%;
+    padding: 4rem 0.4%;
 }
 
 .heading{
@@ -69,7 +69,7 @@ header{
     position: fixed;
     top: 0; left: 0; right:0;
     background: rgba(255, 255, 255, 0.886);
-    padding: 1rem 4%;
+    padding: 2rem 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,6 +204,7 @@ header .icons #menu-bars{
     flex-direction: row;
     align-items: center;
 }
+
 
 .section-three div {
     display: flex;
