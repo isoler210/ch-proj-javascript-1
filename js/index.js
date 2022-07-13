@@ -48,7 +48,8 @@ if (res1) {
 }
 function ImprimirProductos(listaProductos) {
     let impresion = listarProductos(listaProductos);
-    confirm(impresion);
+    return confirm(impresion);
+    
 }
 
 function ListarCarrito(listaCarrito){
@@ -92,3 +93,4 @@ function comprarProductos(listaProductos) {
     }
     alert("Listado final:\n\n"+ListarCarrito(carrito));
 }
+

@@ -153,9 +153,9 @@ header .icons #menu-bars{
     text-align: center;
 
     font-weight: bold;
-    font-size: 12em;
-    color: rgb(58, 53, 195);
-    text-shadow: 3em 3em -3em rgb(101, 193, 210);
+    font-size: 19em;
+    color: rgb(234, 234, 234);
+    text-shadow: 3em 3em -3em rgb(116, 92, 44);
     font-family: 'Fredoka One';
     margin: 2em;
 }
